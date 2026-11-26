@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xdshiroox — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="nav">
+    <a class="logo" href="#">xdshiroox<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO: the first thing people see ===== -->
+    <section class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>xdshiroox</h1>
+      <p class="tagline">I'm learning to build for the web, one project at a time.</p>
+      <a class="button" href="#projects">See my work</a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>
+        This is my first website. I'm building it with AI as my coding partner
+        ("vibecoding") and learning how websites work along the way.
+        Replace this text with a few sentences about you: what you like,
+        what you're into, and what you want to make.
+      </p>
+      <ul class="tags">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Learning JavaScript</li>
+        <li>Vibecoding</li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJECTS: copy a <article class="card"> block to add one ===== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>This website</h3>
+          <p>My first portfolio, built from scratch with HTML and CSS and hosted on GitHub.</p>
+          <a href="https://github.com/xdshiroox/my-first-site">View code →</a>
+        </article>
+
+        <article class="card placeholder">
+          <h3>Next project</h3>
+          <p>Coming soon. Ask Claude to help you build something, then add it here.</p>
+        </article>
+
+        <article class="card placeholder">
+          <h3>Another idea</h3>
+          <p>A game, a tool, a fan page. Anything you make can live here.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2>Find me</h2>
+      <p>
+        <a href="https://github.com/xdshiroox">GitHub</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made by xdshiroox · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    // A tiny bit of JavaScript: puts the current year in the footer.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
